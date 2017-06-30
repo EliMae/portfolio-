@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html>
+<title>Cutie Mermaid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-<head>
-  <title>Cutie Mermaid</title>
-  </head>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
-      <h1 style="text-align:center; color:black; font-family:Yellowtail">Elizabeth Marquez</h1>
-      <h2 style="text-align:center; color:black; font-family:Yellkowtail">Cutie Mermaid</h2>
-      <p style="text-align:center; color;black; font-family:Yellowtail">Hello I'm glad you have taken your time to come visit my website. Enjoy!</p>
-      <a href="https://www.youtube.com/">My favorite website</a>
-    <script>
-    window.alert(Welcome);
-    </script>
-    <br>
-    <img src="https://github.com/EliMae/portfolio-/blob/master/seashells.jpg?raw=true" alt="obamicon" align="middle" width="380" height="377">
-    <img src="https://github.com/EliMae/portfolio-/blob/master/profilepicture.png?raw=true" align="middle" width="336" height="450">
-    <img src="https://github.com/EliMae/portfolio-/blob/master/sidescroller.png?raw=true" align="right" width="588" height="398">
-    <br>
+
+<h2 class="w3-center">Elzabeth Marquez</h2>
+
+<div class="w3-content w3-display-container">
+   <img src="https://github.com/EliMae/portfolio-/blob/master/take%20me%20to%20the.jpg?raw=true">
+  <img src="https://github.com/EliMae/portfolio-/blob/master/seashells.jpg?raw=true" alt="obamicon" style="width:100%">
+  <img src="https://github.com/EliMae/portfolio-/blob/master/profilepicture.png?raw=true" style="width:100%">
+  <img src="https://github.com/EliMae/portfolio-/blob/master/sidescroller.png?raw=true" style="width:100%">
+  <img src="https://github.com/EliMae/portfolio-/blob/master/code.png?raw=true" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+window.alert(Welcome);
+</script>
+
 </body>
 </html>
