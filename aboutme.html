@@ -4,6 +4,31 @@
   <title>Cutie Mermaid</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  .btn-group button {
+    background-color: #FFB6C1; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #FFB6C1;
+}
+    
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
 .mySlides {display:none}
@@ -108,6 +133,13 @@ body {font-family: Verdana,sans-serif;}
   <span class="dot"></span> 
 </div>
 
+ <div class="btn-group" style="width:100%">
+  <button style="width:25%">Home</button>
+  <button style="width:25%">About Me</button>
+  <button style="width:25%">Projects</button>
+  <button style="width:25%">Fun/Contact Info</button>
+</div>
+  
 <script>
 var slideIndex = 0;
 showSlides();
