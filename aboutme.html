@@ -164,11 +164,27 @@ function showSlides() {
 <script>
 window.alert("Hi; Dobre rano, Halo, Witaj, Assalamou Alykoum, Hej, Selam, Kalimera, Buon giorno, Li-Ho, Boas, Shalom, Servus, Tja, Bonjour, Ello-hay, Aloha, Konnichiwa, Zdrasti, Selamat datang, Namaste, Sawubona, Choni, Hola, Privet, Ni hao, Ha'u, Xin chao, Ahnyong, O'siyo, Sveikas, Barev, Yatasay, Shwmae, Ya'at'eeh, Namaskara, Kaixo, Moin, Hei, Salaam Alekum, Dia Duit, Jambo!!")
 </script>
-
   
-<div class="speech-bubble speech-bubble-top">
-    <p>Hello, my name is Elizabeth one of the creators.</p>
-</div>
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 41px solid transparent;
+	border-right-color: #ffffff;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -20.5px;
+	margin-left: -41px;
+}
 
 </body>
 </html> 
